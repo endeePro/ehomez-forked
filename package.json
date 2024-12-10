@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "netlify:build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "lint:fix": "yarn run lint -- --fix",
