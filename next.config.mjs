@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone', // Add this line for Netlify deployment
   images: {
     remotePatterns: [
       {
@@ -20,9 +21,8 @@ const nextConfig = {
       test: /\.node/,
       use: "raw-loader",
     });
-
     return config;
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig; // Change from export default
