@@ -25,4 +25,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig; // Change from export default
+export default nextConfig;
