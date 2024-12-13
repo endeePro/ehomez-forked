@@ -17,6 +17,7 @@ import {
 
 import { Avatar } from "../avatar";
 import { Typography } from "../typography";
+import Image from "next/image";
 
 export const AppNotification = () => {
   const { data, isLoading } = useGetNotificationsQuery();
@@ -147,7 +148,7 @@ export const AppNotification = () => {
                 }}
               >
                 <div className="h-12 w-12 flex-shrink-0 overflow-hidden rounded-md">
-                  <img
+                  <Image
                     src={notification.featuredImage}
                     alt={notification.name}
                     className="h-full w-full object-cover"
